@@ -15,8 +15,8 @@
         var controlsLight = new THREE.OrbitControls(light);
         var geometry = new THREE.SphereGeometry(250, 100, 100);
         var matherial = new THREE.MeshPhongMaterial({
-            map: new THREE.TextureLoader().load('/img/earth.jpg'),
-            displacementMap: new THREE.TextureLoader().load('/img/earth_r.jpg'),
+            map: new THREE.TextureLoader().load('./img/earth.jpg'),
+            displacementMap: new THREE.TextureLoader().load('./img/earth_r.jpg'),
             displacementScale: 20
         });
         var mesh = new THREE.Mesh(geometry, matherial);
